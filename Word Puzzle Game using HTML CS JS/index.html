@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Word Puzzle Game</h1>
+    <div class="game-header">
+      <div class="timer">Time Left: <span id="time">02:00</span></div>
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    <div class="game-container">
+      <div class="puzzle-container">
+        <div id="puzzle"></div>
+        <div class="buttons">
+          <button id="change-btn">Change</button>
+          <button id="hint-btn">Hint</button>
+          <button id="restart-btn">Restart</button>
+          <button id="finish-btn">Finish</button>
+        </div>
+      </div>
+      <div class="word-list-container">
+        <h3>Find These Words:</h3>
+        <ul id="word-list"></ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p id="popup-message"></p>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
